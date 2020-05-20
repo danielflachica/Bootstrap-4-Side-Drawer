@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Styling for page -->
+    <link rel="stylesheet" href="public/css/app.css">
+    <!-- Bootstrap Side Drawer CSS -->
+    <link rel="stylesheet" href="public/css/side-drawer.css">
+
+    <title>Bootstrap Side Drawer Demo</title>
+  </head>
+  <body class="bg-light" onload="toggleActiveState()">
+    <!-- Begin Side Drawer -->
+    <div id="side-drawer" class="position-fixed">
+      <div class="h-100 bg-white">
+        <!-- Side Drawer Title -->
+        <div class="p-4 bg-dark">
+          <a href="index.html">
+            <h1 class="text-white">Home</h1>
+          </a>
+        </div>
+        <!-- Side Drawer Links -->
+        <ul id="links" class="list-group" onclick="closeSideDrawer()">
+          <a id="link-structure" href="#structure" class="list-group-item list-group-item-action border-0 rounded-0 active">Structure</a>
+          <a id="link-css" href="#css" class="list-group-item list-group-item-action border-0 rounded-0">CSS</a>
+          <a id="link-javascript" href="#javascript" class="list-group-item list-group-item-action border-0 rounded-0">JavaScript</a>
+          <a id="link-customization" href="#customization" class="list-group-item list-group-item-action border-0 rounded-0">Customization</a>
+        </ul>
+      </div>
+    </div>
+    <div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"></div>
+    <!-- End Side Drawer -->
+
+    <!-- Begin Top Navbar -->
+    <nav class="navbar navbar-dark bg-primary fixed-top">
+      <button class="navbar-toggler" type="button" onclick="openSideDrawer()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="navbar-text">
+        Project Name &copy; 2020
+      </span>
+    </nav>
+    <!-- End Top Navbar -->
+
+    <!-- Begin Main Content -->
+    <main class="container my-5 bg-white">
+      <div class="p-4 p-md-5">
+        <div class="d-none d-md-block">
+          <h1 class="display-4">Bootstrap 4 Side Drawer Documentation</h1>
+        </div>
+        <div class="d-md-none">
+          <h1>Bootstrap 4 Side Drawer Documentation</h1>
+        </div>
+        <hr>
+        <p class="lead">
+          This mobile-friendly Side Drawer example implementation was made entirely with <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">Bootstrap 4</a>, a couple of <a href="#css">custom styles</a> and two simple <a href="#javascript">JS functions</a>. To access the Side Drawer, click on the menu button in the navbar above. The width of the Side Drawer component is fixed at <code>336px</code> since it's the <a href="https://forums.envato.com/t/standard-sidebar-width/75633" target="_blank">standard width of a sidebar</a>, but you can <a href="#customization">customize</a> this. It's pretty simple and can be implemented with ease in any of your projects.
+        </p>
+
+        <!-- Begin Structure Section -->
+        <a id="structure">
+          <h3 class="mt-4">Structure</h3>
+          <p>The layout is divided into three (3) main parts. To get started, feel free to copy-paste (<em class="text-muted">in order!</em>) inside the <code>body</code> tag and enjoy.<p>
+          <div class="row">
+            <!-- Begin Side Drawer Card -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header">1. The Side Drawer</h5>
+                <div class="card-body pb-2">
+                  <a href="javascript:void(0)" class="badge badge-info p-2 mr-3 position-absolute" style="right:0;" onclick="copyCode('code-side-drawer')">Copy!</a>
+                  <pre id="code-side-drawer">
+&lt;div id="side-drawer" class="position-fixed"&gt;
+  &lt;div class="h-100 bg-white"&gt;
+    &lt;div class="p-4 bg-dark"&gt;
+      &lt;a href="#"&gt;
+        &lt;h1 class="text-white"&gt;Title&lt;/h1&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;ul class="list-group" onclick="closeSideDrawer()"&gt;
+      &lt;a href="#" class="list-group-item list-group-item-action border-0 rounded-0 active"&gt;Link&lt;/a&gt;
+      &lt;a href="#" class="list-group-item list-group-item-action border-0 rounded-0"&gt;Link&lt;/a&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"&gt;&lt;/div&gt;
+</pre>
+                </div>
+              </div>
+            </div>
+            <!-- End Side Drawer Card -->
+            <!-- Begin Top Navbar Card -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header">2. The Top Navbar</h5>
+                <div class="card-body pb-2">
+                  <a href="javascript:void(0)" class="badge badge-info p-2 mr-3 position-absolute" style="right:0;" onclick="copyCode('code-navbar')">Copy!</a>
+                  <pre id="code-navbar">
+&lt;nav class="navbar navbar-dark bg-primary fixed-top"&gt;
+  &lt;button class="navbar-toggler" type="button" onclick="openSideDrawer()"&gt;
+    &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;span class="navbar-text"&gt;
+    &lt;!-- Project Title --&gt;
+  &lt;/span&gt;
+&lt;/nav&gt;
+</pre>
+                </div>
+              </div>
+            </div>
+            <!-- End Top Navbar Card -->
+            <!-- Begin Main Content Card -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header">3. The Main Content</h5>
+                <div class="card-body pb-2">
+                  <a href="javascript:void(0)" class="badge badge-info p-2 mr-3 position-absolute" style="right:0;" onclick="copyCode('code-content')">Copy!</a>
+                  <pre id="code-content">
+&lt;main class="container my-5 bg-white"&gt;
+  &lt;div class="p-4 p-md-5"&gt;
+    &lt;!-- Place Content Here --&gt;
+  &lt;/div&gt;
+&lt;/main&gt;
+</pre>
+                </div>
+              </div>
+            </div>
+            <!-- End Main Content Card -->
+          </div>
+        </a>
+        <!-- End Structure Section -->
+
+        <!-- Begin CSS Section -->
+        <a id="css">
+          <h3 class="mt-4">Side Drawer CSS</h3>
+          <p>The custom CSS for the Side Drawer is as follows:</p>
+          <div class="card mb-3">
+            <div class="card-body pb-2 px-4 bg-light">
+              <a href="javascript:void(0)" class="badge badge-info p-2 mr-3 position-absolute" style="right:0;" onclick="copyCode('code-css')">Copy!</a>
+              <pre id="code-css">
+#side-drawer {
+  height: 100vh;
+  width: 336px;  /* Reference: https://forums.envato.com/t/standard-sidebar-width/75633 */
+  z-index: 1032;  /* z-index of standard bootstrap navbar is 1030 + 1 offset due to side-drawer-void */
+  top: 0;
+  left: -336px;
+  transition: left 0.25s ease;
+}
+
+#side-drawer-void {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1031;  /* z-index of standard bootstrap navbar is 1030 */
+  background: rgba(0,0,0,.6);
+}
+</pre>
+            </div>
+          </div>
+          <p>
+            The <code>#side-drawer</code> component needs its height explicitly set to <code>100vh</code> for it to cover the full screen height. By default, its <code>left</code> property is set to <code>-336px</code> so the Side Drawer is hidden on page load. Opening the Side Drawer will set <code>left</code> to <code>0</code> so it's visible on the viewport.
+          </p>
+          <p>
+            <code>#side-drawer-void</code> styles the clickable area <em>outside</em> the Side Drawer when it's open. Basically, it's a <code>div</code> that covers the entire viewport.
+          </p>
+          <p>
+            The <code>z-index</code> property, as you may have noticed, is set to very specific values for both elements. By trial-and-error, I found that Bootstrap's <code>navbar</code> class is set to <code>z-index: 1030</code> by default. Therefore, the <code>#side-drawer-void</code> is set to <code>z-index: 1031</code> so it's <em>above</em> the navbar (<span class="text-muted">and consequently, everything under the navbar</span>), but <em>beneath</em> the <code>#side-drawer</code> element which is set at <code>z-index: 1032</code>. This way, clicking anywhere <em>outside</em> the Side Drawer will close it, but clicking on the Side Drawer itself (except for the links section) won't do anything.
+          </p>
+        </a>
+        <!-- End CSS Section -->
+
+        <!-- Begin JS Section -->
+        <a id="javascript">
+          <h3 class="mt-4">Side Drawer JavaScript</h3>
+          <p>The only JavaScript needed (<span class="text-muted">in addition to Bootstrap's core JS</span>) for the Side Drawer is documented below. Be sure to include it before the end of the <code>body</code> tag. Huge thanks to this <a href="https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp" target="_blank">W3Schools Tutorial</a> for the idea/reference.</p>
+          <div class="card mb-3">
+            <div class="card-body pb-2 px-4 bg-light">
+              <a href="javascript:void(0)" class="badge badge-info p-2 mr-3 position-absolute" style="right:0;" onclick="copyCode('code-js')">Copy!</a>
+              <pre id="code-js">
+function openSideDrawer() {
+  document.getElementById("side-drawer").style.left = "0";
+  document.getElementById("side-drawer-void").classList.add("d-block");
+  document.getElementById("side-drawer-void").classList.remove("d-none");
+}
+
+function closeSideDrawer() {
+  document.getElementById("side-drawer").style.left = "-336px";
+  document.getElementById("side-drawer-void").classList.add("d-none");
+  document.getElementById("side-drawer-void").classList.remove("d-block");
+}
+</pre>
+            </div>
+          </div>
+          <p>The JavaScript functions shown above are pretty straightforward. The first, when called via the <code>navbar-toggler</code> button's <code>onclick</code> attribute, will cause the Side Drawer to slide in from the left side of the viewport.</p>
+          <p>Conversely, the second function, as its name suggests, will hide the Side Drawer when the either the <code>&lt;div id="side-drawer-void"&gt;&lt;/div&gt;</code> or Side Drawer's <code>&lt;ul class="list-group"&gt;&lt;/ul&gt;</code> HTML elements are clicked.</p>
+        </a>
+        <!-- End JS Section -->
+
+        <!-- Begin Customization Section -->
+        <a id="customization">
+          <h3 class="mt-4">Customizing the Side Drawer</h3>
+          <p>If needed, certain aspects of the Side Drawer may be customized to your liking. However, the following items <span class="text-danger text-lowercase font-weight-bold">SHOULD NOT BE MODIFIED IN ANY WAY</span>:</p>
+          <ul type="circle">
+            <li>The ID of the Side Drawer component, <code>side-drawer</code></li>
+            <li>The ID of the clickable area outside of the Side Drawer, <code>side-drawer-void</code></li>
+            <li>The <code>height</code>, <code>top</code>, and <code>z-index</code> CSS properties of <code>#side-drawer</code></li>
+            <li>The <code>height</code>, <code>width</code>, <code>top</code>, and <code>z-index</code> CSS properties of <code>#side-drawer-void</code></li>
+          </ul>
+          <p>That being said, you're free to customize the appearance of the Side Drawer using any of Bootstrap's existing <code>text</code> and <code>bg</code> classes.</p>
+          <p>If you're looking to change the <b>width of the Side Drawer</b>, be sure to edit its <code>px</code> value in the following places:</p>
+          <ul type="circle">
+            <li><code>width</code> property in the <code>#side-drawer</code> CSS selector</li>
+            <li>(Negative) <code>left</code> property in the <code>#side-drawer</code> CSS selector</li>
+            <li>(Negative) <code>left</code> style in the <code>closeSideDrawer()</code> JavaScript function</li>
+          </ul>
+        </a>
+        <!-- End Customization Section -->
+
+        <hr class="mt-4">
+
+        <p class="lead text-center mt-5">That's all there is to it! Now go code something.<small class="ml-2"><a href="#" onclick="resetActiveState()">Back to Top</a></small></p>
+      </div>
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Bootstrap JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-4 p-md-5.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Side Drawer JS -->
+    <script src="public/js/side_drawer.js"></script>
+    <!-- Copy Code JS -->
+    <script src="public/js/copy_code.js"></script>
+    <script src="public/js/active_state.js"></script>
+  </body>
+</html>
