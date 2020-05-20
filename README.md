@@ -16,4 +16,5 @@ I made use of the following during the course of development:
 - https://getbootstrap.com/docs/4.0/getting-started/introduction/
 - https://forums.envato.com/t/standard-sidebar-width/75633
 - https://stackoverflow.com/questions/44908329/copy-text-innerhtml-of-element-to-clipboard
+- https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp
 - https://www.w3schools.com/howto/howto_js_active_element.asp
