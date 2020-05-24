@@ -19,10 +19,11 @@
     <div id="side-drawer" class="position-fixed">
       <div class="h-100 bg-white">
         <!-- Side Drawer Title -->
-        <div class="p-4 bg-dark">
-          <a href="index.html">
-            <h1 class="text-white">Home</h1>
+        <div class="p-4 text-center bg-dark">
+          <a href="index.html" data-toggle="tooltip" data-placement="right" title="Home">
+            <img src="https://picsum.photos/100" class="rounded-circle mb-3" style="height: 100px">
           </a>
+          <p class="lead text-info mb-0">email@yourapp.com</p>
         </div>
         <!-- Side Drawer Links -->
         <ul id="links" class="list-group" onclick="closeSideDrawer()">
@@ -258,6 +259,11 @@ window.closeSideDrawer = closeSideDrawer;
     <script src="https://code.jquery.com/jquery-4 p-md-5.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
 
     <!-- Side Drawer JS -->
     <script src="public/js/side_drawer.js"></script>
