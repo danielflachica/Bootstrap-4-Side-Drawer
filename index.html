@@ -32,6 +32,15 @@
           <a id="link-customization" href="#customization" class="list-group-item list-group-item-action border-0 rounded-0">Customization</a>
         </ul>
       </div>
+      <!-- Side Drawer Citation -->
+      <div class="position-absolute w-100" style="bottom: 0">
+        <div class="container px-4 py-3 text-muted">
+          <small>
+            Side Drawer by
+            <a class="text-muted text-decoration-none" href="http://github.com/danielflachica/" target="_blank">Daniel Lachica</a>
+          </small>
+        </div>
+      </div>
     </div>
     <div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"></div>
     <!-- End Side Drawer -->
@@ -65,6 +74,12 @@
         <a id="structure">
           <h3 class="mt-4">Structure</h3>
           <p>The layout is divided into three (3) main parts. To get started, feel free to copy-paste (<em class="text-muted">in order!</em>) inside the <code>body</code> tag and enjoy.<p>
+          <p class="alert alert-info">
+            <a href="https://icons8.com/icon/80585/info" target="_blank" style="text-decoration: none;">
+              <img src="https://img.icons8.com/flat_round/18/000000/info.png" class="align-self-center mr-2 mb-1" title="Info icon by Icons8"/>
+            </a>
+            Be sure to include <code>public/css/side-drawer.css</code> and <code>public/js/side_drawer.js</code> in your source code first!
+          </p>
           <div class="row">
             <!-- Begin Side Drawer Card -->
             <div class="col-md-4">
@@ -72,7 +87,7 @@
                 <h5 class="card-header">1. The Side Drawer</h5>
                 <div class="card-body pb-2">
                   <a href="javascript:void(0)" class="badge badge-info p-2 mr-3 position-absolute" style="right:0;" onclick="copyCode('code-side-drawer')">Copy!</a>
-                  <pre id="code-side-drawer">
+                  <pre id="code-side-drawer" class="overflow-auto" style="max-height: 300px;">
 &lt;div id="side-drawer" class="position-fixed"&gt;
   &lt;div class="h-100 bg-white"&gt;
     &lt;div class="p-4 bg-dark"&gt;
@@ -84,6 +99,14 @@
       &lt;a href="#" class="list-group-item list-group-item-action border-0 rounded-0 active"&gt;Link&lt;/a&gt;
       &lt;a href="#" class="list-group-item list-group-item-action border-0 rounded-0"&gt;Link&lt;/a&gt;
     &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="position-absolute w-100" style="bottom: 0"&gt;
+  &lt;div class="container px-4 py-3 text-muted"&gt;
+    &lt;small&gt;
+      Side Drawer by
+      &lt;a class="text-muted text-decoration-none" href="http://github.com/danielflachica/" target="_blank"&gt;Daniel Lachica&lt;/a&gt;
+    &lt;/small&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"&gt;&lt;/div&gt;
