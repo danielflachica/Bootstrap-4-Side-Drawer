@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-side-drawer",
+  "version": "1.0.1",
+  "description": "A simple Bootstrap 4 implementation of a side drawer navigation component",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielflachica/Bootstrap-4-Side-Drawer.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Side Drawer"
+  ],
+  "author": "Daniel Lachica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielflachica/Bootstrap-4-Side-Drawer/issues"
+  },
+  "homepage": "https://github.com/danielflachica/Bootstrap-4-Side-Drawer#readme"
+}
