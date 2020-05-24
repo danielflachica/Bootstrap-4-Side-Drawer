@@ -1,7 +1,7 @@
 # Bootstrap 4 Side Drawer
 
 **Author**: Daniel Lachica &middot;
-**Last Edited on**: May 20, 2020
+**Last Edited on**: May 24, 2020
 
 [![GitHUb Link](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/danielflachica/Bootstrap-4-Side-Drawer)
 ---
