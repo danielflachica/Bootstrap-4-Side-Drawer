@@ -18,3 +18,5 @@ I made use of the following during the course of development:
 - https://stackoverflow.com/questions/44908329/copy-text-innerhtml-of-element-to-clipboard
 - https://www.w3schools.com/howto/howto_js_collapse_sidepanel.asp
 - https://www.w3schools.com/howto/howto_js_active_element.asp
+- https://icons8.com
+- https://picsum.photos/
