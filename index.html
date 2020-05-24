@@ -81,7 +81,7 @@
                 <h5 class="card-header">1. The Side Drawer</h5>
                 <div class="card-body pb-2">
                   <a href="javascript:void(0)" class="badge badge-info p-2 mr-3 position-absolute" style="right:0;" onclick="copyCode('code-side-drawer')">Copy!</a>
-                  <pre id="code-side-drawer">
+                  <pre id="code-side-drawer" class="overflow-auto" style="max-height: 300px;">
 &lt;div id="side-drawer" class="position-fixed"&gt;
   &lt;div class="h-100 bg-white"&gt;
     &lt;div class="p-4 bg-dark"&gt;
@@ -93,6 +93,14 @@
       &lt;a href="#" class="list-group-item list-group-item-action border-0 rounded-0 active"&gt;Link&lt;/a&gt;
       &lt;a href="#" class="list-group-item list-group-item-action border-0 rounded-0"&gt;Link&lt;/a&gt;
     &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="position-absolute w-100" style="bottom: 0"&gt;
+  &lt;div class="container px-4 py-3 text-muted"&gt;
+    &lt;small&gt;
+      Side Drawer by
+      &lt;a class="text-muted text-decoration-none" href="http://github.com/danielflachica/" target="_blank"&gt;Daniel Lachica&lt;/a&gt;
+    &lt;/small&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"&gt;&lt;/div&gt;
