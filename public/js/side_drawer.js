@@ -9,3 +9,6 @@ function closeSideDrawer() {
     document.getElementById("side-drawer-void").classList.add("d-none");
     document.getElementById("side-drawer-void").classList.remove("d-block");
 }
+
+window.openSideDrawer = openSideDrawer;
+window.closeSideDrawer = closeSideDrawer;

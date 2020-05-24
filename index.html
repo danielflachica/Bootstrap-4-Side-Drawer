@@ -191,11 +191,15 @@ function closeSideDrawer() {
   document.getElementById("side-drawer-void").classList.add("d-none");
   document.getElementById("side-drawer-void").classList.remove("d-block");
 }
+
+window.openSideDrawer = openSideDrawer;
+window.closeSideDrawer = closeSideDrawer;
 </pre>
             </div>
           </div>
           <p>The JavaScript functions shown above are pretty straightforward. The first, when called via the <code>navbar-toggler</code> button's <code>onclick</code> attribute, will cause the Side Drawer to slide in from the left side of the viewport.</p>
           <p>Conversely, the second function, as its name suggests, will hide the Side Drawer when the either the <code>&lt;div id="side-drawer-void"&gt;&lt;/div&gt;</code> or Side Drawer's <code>&lt;ul class="list-group"&gt;&lt;/ul&gt;</code> HTML elements are clicked.</p>
+          <p>In the last two lines of <code>side_drawer.js</code>, the <code>window.&lt;function-name&gt; = &lt;function-name&gt;;</code> code segments simply assign the two Side Drawer JS functions to the current window DOM object so that they're directly callable from anywhere within your views.</p>
         </a>
         <!-- End JS Section -->
 
